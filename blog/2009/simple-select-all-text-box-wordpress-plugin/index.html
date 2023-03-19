@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Garrett Grimm | blog</title>
+    <title>Garrett Grimm | Select All Text Box Wordpress Plugin</title>
     <meta name="author" content="Garrett  Grimm" />
     <meta name="description" content="Garrett Grimm, Web Developer and Musician.
 " />
@@ -32,7 +32,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://grimmdude.com/blog/">
+    <link rel="canonical" href="https://grimmdude.com/blog/2009/simple-select-all-text-box-wordpress-plugin/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -67,7 +67,7 @@
               
               <!-- Blog -->
               <li class="nav-item active">
-                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/blog/">blog</a>
               </li>
 
               <!-- Other pages -->
@@ -76,8 +76,8 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -90,120 +90,56 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
 
-  
+<div class="post">
 
-
-  <ul class="post-list">
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2023/some-thoughts-on-ai/">Some Thoughts on AI</a>
-      </h3>
-      <p></p>
-      <p class="post-meta"> 2 min read &nbsp; &middot; &nbsp;
-        March 19, 2023
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2023">
-          <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-
+  <header class="post-header">
+    <h1 class="post-title">Select All Text Box Wordpress Plugin</h1>
+    <p class="post-meta">November 4, 2009</p>
+    <p class="post-tags">
+      <a href="/blog/2009"> <i class="fas fa-calendar fa-sm"></i> 2009 </a>
+        ·  
+        <a href="/blog/category/Wordpress">
+          <i class="fas fa-tag fa-sm"></i> Wordpress</a>  
           
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/Technology">
-              <i class="fas fa-tag fa-sm"></i> Technology</a> &nbsp;
-              
-          
     </p>
-    </li>
+  </header>
 
-    
+  <article class="post-content">
+    <p>Here’s another simple WordPress plugin I came up with.  I was trying to figure out an easy way to create a text box for some song lyrics which, once clicked, selected everything inside so anyone could easily copy and past the contents.  Well, once I figured out how to make it I figured I would make it easier for others who want to do the same thing.  Hence, Simple Select All Text box was born.</p>
 
-    
-    
-    
-    
+<p><a class="button" title="Download Simple Select All Text Box Plugin" href="http://wordpress.org/extend/plugins/simple-select-all-text-box/" target="_blank" rel="noopener noreferrer">Download Plugin</a></p>
+<h2>Instructions:</h2>
+<p>To create a text box in a post or a page use this shortcode:</p>
+<p></p>
+<pre>[textbox rows="3"]Contents of text box[/textbox]</pre>
+<p>Options are as follows:</p>
+<ul>
+	<li>
+<code>rows</code> Number of text rows.  This will determine the height of the text box. (optional)</li>
+	<li>
+<code>width</code> Width of the text box in pixels. (optional)</li>
+	<li>
+<code>code</code> When set to <b>true</b> the content of the text box will not be escaped. Useful for including code snippets. (optional)</li>
+	<li>
+<code>class</code> Specifies a custom class to use on the text box.  Useful for styling. (optional)</li>
+</ul>
+<h2>Installation:</h2>
+<ol>
+	<li>Upload the whole simple-select-all-textbox folder to the /wp-content/plugins/ directory.</li>
+	<li>Activate the plugin through the Plugins menu in WordPress.</li>
+	<li>Go to the options page to adjust the width of all text boxes made using this shortcode.</li>
+</ol>
+<h2>Example:</h2>
+<textarea rows="3" class="form-control" onclick="this.focus();this.select();" onchange="this.value = this.getAttribute('data-content');" data-content="And we could pretend it all the time
+Can't you see that it's just raining?
+There ain't no need to go outside">And we could pretend it all the time
+Can't you see that it's just raining?
+There ain't no need to go outside</textarea>
 
-    <li>
-      <h3><a class="post-title" href="/blog/2017/midiwriterjs/">MidiWriterJS - A JavaScript Library for Creating Expressive MIDI Files</a>
-      </h3>
-      <p></p>
-      <p class="post-meta"> 5 min read &nbsp; &middot; &nbsp;
-        January 26, 2017
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2017">
-          <i class="fas fa-calendar fa-sm"></i> 2017 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/JavaScript">
-              <i class="fas fa-tag fa-sm"></i> JavaScript</a> &nbsp;
-              
-            <a href="/blog/category/MIDI">
-              <i class="fas fa-tag fa-sm"></i> MIDI</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2013/delete-duplicate-wordpress-comments/">Delete Duplicate WordPress Comments</a>
-      </h3>
-      <p></p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        June 24, 2013
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2013">
-          <i class="fas fa-calendar fa-sm"></i> 2013 </a>
-
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/Wordpress">
-              <i class="fas fa-tag fa-sm"></i> Wordpress</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
-
-  <nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li><li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+  </article>
 
 </div>
 
@@ -212,7 +148,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2023 Garrett  Grimm. 
+        © Copyright 2023 Garrett  Grimm. 
       </div>
     </footer>
 
