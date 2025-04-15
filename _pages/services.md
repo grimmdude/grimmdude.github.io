@@ -1,16 +1,9 @@
 ---
 layout: default
-title: Services
+title: services
 permalink: /services
 subtitle: Professional WordPress Maintenance & Support Services
-
-profile:
-  align: right
-  image: garrett_grimm.png
-  address: 
-
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+nav: true
 social: true  # includes social icons at the bottom of the page
 ---
 
@@ -18,7 +11,7 @@ social: true  # includes social icons at the bottom of the page
   <div class="row mb-5">
     <div class="col-12">
       <h2 class="text-center mb-4">WordPress Maintenance Plans</h2>
-      <p class="lead text-center">Professional WordPress maintenance services to keep your website secure, fast, and up-to-date.</p>
+      <p class="lead text-center">Leverage my years of WordPress experience to keep your site running fast and secure.</p>
     </div>
   </div>
 
@@ -30,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
           <h3 class="my-0 text-white">Starter Plan</h3>
         </div>
         <div class="card-body">
-          <h4 class="card-title pricing-card-title text-center mb-4">$49<small class="text-muted">/month</small></h4>
+          <h4 class="card-title pricing-card-title text-center mb-4">$80<small class="text-muted">/month</small></h4>
           <ul class="list-unstyled mt-3 mb-4">
             <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> WordPress Core Updates</li>
             <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Plugin & Theme Updates</li>
@@ -53,7 +46,7 @@ social: true  # includes social icons at the bottom of the page
           <h3 class="my-0 text-white">Growth Plan</h3>
         </div>
         <div class="card-body">
-          <h4 class="card-title pricing-card-title text-center mb-4">$99<small class="text-muted">/month</small></h4>
+          <h4 class="card-title pricing-card-title text-center mb-4">$120<small class="text-muted">/month</small></h4>
           <ul class="list-unstyled mt-3 mb-4">
             <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> <strong>Everything in Starter Plan</strong></li>
             <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Advanced Site Speed Optimization</li>
