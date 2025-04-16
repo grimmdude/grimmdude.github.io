@@ -26,13 +26,13 @@
             <ul class="navbar-nav ms-auto flex-nowrap">
 
               <!-- About -->
-              <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
+              <!-- <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/' | relative_url }}">about
                   {%- if page.title == "about" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
-              </li>
+              </li> -->
               {% if site.blog_name %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
@@ -44,8 +44,26 @@
               </li>
               {%- endif %}
 
+              <!-- Projects -->
+              <li class="nav-item {% if page.name == 'projects.md' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/projects/' | relative_url }}">projects
+                  {%- if page.name == "projects.md" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
+              <!-- Services -->
+              <li class="nav-item {% if page.name == 'services.md' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/services/' | relative_url }}">services
+                  {%- if page.name == "services.md" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
               <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "title" -%}
+              <!-- {%- assign sorted_pages = site.pages | sort: "title" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.dropdown %}
@@ -75,7 +93,7 @@
               </li>
               {%- endif -%}
               {%- endif -%}
-              {% endfor -%}
+              {% endfor -%} -->
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

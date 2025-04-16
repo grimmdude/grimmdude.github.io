@@ -1,8 +1,8 @@
 ---
 layout: default
-title: services
+title: WordPress Maintenance Service
 permalink: /services
-subtitle: Professional WordPress Maintenance & Support Services
+description: Professional WordPress maintenance & support services
 nav: true
 social: true  # includes social icons at the bottom of the page
 ---
@@ -10,100 +10,109 @@ social: true  # includes social icons at the bottom of the page
 <div class="container">
   <div class="row mb-5">
     <div class="col-12">
-      <h2 class="text-center mb-4">WordPress Maintenance Plans</h2>
-      <p class="lead text-center">Leverage my years of WordPress experience to keep your site running fast and secure.</p>
+      <h2 class="text-center mb-4">WordPress Maintenance Service</h2>
+      <p class="lead text-center">Your website deserves professional care.  Leverage my 15+ years of web development experience and let me handle the technical details so you can <b>focus on your business.</b></p>
     </div>
   </div>
 
-  <div class="row">
-    <!-- Starter Plan -->
-    <div class="col-md-6 mb-4">
-      <div class="card h-100 shadow">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 mb-5">
+      <div class="card shadow">
         <div class="card-header bg-primary text-white text-center">
-          <h3 class="my-0 text-white">Starter Plan</h3>
+          <h3 class="my-0 text-white h4 fw-normal">Comprehensive Website Care</h3>
         </div>
         <div class="card-body">
-          <h4 class="card-title pricing-card-title text-center mb-4">$80<small class="text-muted">/month</small></h4>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> WordPress Core Updates</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Plugin & Theme Updates</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Daily Website Backups</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Uptime Monitoring</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Basic Security Scans</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Monthly Performance Reports</li>
-          </ul>
+          <!-- <h4 class="card-title pricing-card-title text-center mb-4">$120<small class="text-muted">/month</small></h4> -->
+          
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <h5><i class="fas fa-life-ring text-primary me-1"></i> Proactive Support</h5>
+              <ul class="list-unstyled ml-4">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> 24/7 Uptime Monitoring</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Daily Offsite Backups</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Emergency Support</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Performance Reports</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="fas fa-tachometer-alt text-primary me-1"></i> Performance</h5>
+              <ul class="list-unstyled ml-4">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Site Speed Optimization</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Database Optimization</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Caching Configuration</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Image Optimization</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h5><i class="fas fa-shield-alt text-primary me-1"></i> Security & Updates</h5>
+              <ul class="list-unstyled ml-4">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> WordPress Core Updates</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Plugin & Theme Updates</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Security Monitoring</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Malware Scanning</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h5><i class="fas fa-code text-primary me-1"></i> Development</h5>
+              <ul class="list-unstyled ml-4">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Small Website Changes</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Custom Plugin Development</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> Theme Customizations</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-1"></i> 2 Hours of Development Time/Month</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="card-footer text-center">
-          <a href="mailto:garrett@grimmdude.com?subject=WordPress Starter Plan Inquiry" class="btn btn-lg btn-block btn-outline-primary">Get Started</a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Growth Plan -->
-    <div class="col-md-6 mb-4">
-      <div class="card h-100 shadow">
-        <div class="card-header bg-primary text-white text-center">
-          <h3 class="my-0 text-white">Growth Plan</h3>
-        </div>
-        <div class="card-body">
-          <h4 class="card-title pricing-card-title text-center mb-4">$120<small class="text-muted">/month</small></h4>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> <strong>Everything in Starter Plan</strong></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Advanced Site Speed Optimization</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Enhanced Security Measures</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Weekly Database Optimization</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Priority Support</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> 1 Hour of Development Time/Month</li>
-          </ul>
-        </div>
-        <div class="card-footer text-center">
-          <a href="mailto:garrett@grimmdude.com?subject=WordPress Growth Plan Inquiry" class="btn btn-lg btn-block btn-primary">Get Started</a>
+          <a href="mailto:garrett@grimmdude.com?subject=WordPress Maintenance Inquiry&body=Hi Garrett,%0D%0A%0D%0AI'm interested in your WordPress maintenance service. Here are my details:%0D%0A%0D%0AName:%0D%0AWebsite URL:%0D%0ACurrent issues or concerns:%0D%0A%0D%0AThank you!" class="btn btn-primary">Get Started</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row mt-5">
+  <div class="row mt-5 mb-5">
     <div class="col-12">
-      <div class="card mb-4 shadow">
+      <div class="card shadow">
         <div class="card-header bg-light">
-          <h4 class="my-0 font-weight-normal">Why Choose Professional WordPress Maintenance?</h4>
+          <h4 class="h5 my-0 fw-normal text-center">Why Professional WordPress Maintenance Matters</h4>
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center mb-2">
-                <div class="mr-3">
-                  <i class="fas fa-shield-alt text-primary" style="font-size: 2rem;"></i>
-                </div>
-                <div>
-                  <h5>Enhanced Security</h5>
-                </div>
+            <div class="col-md-4 mb-4">
+              <div class="text-center mb-3">
+                <i class="fas fa-shield-alt text-primary" style="font-size: 2.5rem;"></i>
               </div>
-              <p class="text-muted">Regular updates and security scans protect your site from vulnerabilities and attacks.</p>
+              <h5 class="text-center">Security Protection</h5>
+              <p class="text-muted">WordPress sites are frequent targets for hackers. Regular updates and security monitoring keep threats at bay.</p>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center mb-2">
-                <div class="mr-3">
-                  <i class="fas fa-tachometer-alt text-primary" style="font-size: 2rem;"></i>
-                </div>
-                <div>
-                  <h5>Optimized Performance</h5>
-                </div>
+            
+            <div class="col-md-4 mb-4">
+              <div class="text-center mb-3">
+                <i class="fas fa-tachometer-alt text-primary" style="font-size: 2.5rem;"></i>
               </div>
-              <p class="text-muted">Improve site speed and performance through regular optimization and cleanup.</p>
+              <h5 class="text-center">Performance Optimization</h5>
+              <p class="text-muted">Slow sites lose visitors. I'll keep your site running at peak performance to provide the best user experience.</p>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center mb-2">
-                <div class="mr-3">
-                  <i class="fas fa-clock text-primary" style="font-size: 2rem;"></i>
-                </div>
-                <div>
-                  <h5>Save Time & Focus</h5>
-                </div>
+            
+            <div class="col-md-4 mb-4">
+              <div class="text-center mb-3">
+                <i class="fas fa-tools text-primary" style="font-size: 2.5rem;"></i>
               </div>
-              <p class="text-muted">Focus on your business while I handle the technical aspects of your website.</p>
+              <h5 class="text-center">Technical Expertise</h5>
+              <p class="text-muted">With years of WordPress experience, I can handle complex issues, custom development, and technical optimizations.</p>
             </div>
+            
+            <!-- <div class="col-md-3 mb-4">
+              <div class="text-center mb-3">
+                <i class="fas fa-clock text-primary" style="font-size: 2.5rem;"></i>
+              </div>
+              <h5 class="text-center">Peace of Mind</h5>
+              <p class="text-muted">Focus on your business while I ensure your website is secure, up-to-date, and performing optimally.</p>
+            </div> -->
           </div>
         </div>
       </div>
@@ -113,8 +122,8 @@ social: true  # includes social icons at the bottom of the page
   <div class="row mt-4 mb-5">
     <div class="col-12 text-center">
       <h3>Need a custom solution?</h3>
-      <p class="lead">Contact me to discuss your specific WordPress maintenance requirements.</p>
-      <a href="mailto:garrett@grimmdude.com?subject=Custom WordPress Maintenance Inquiry" class="btn btn-lg btn-outline-primary mt-2">Contact Me</a>
+      <p class="lead">Have specific requirements or a larger website? Contact me to discuss a tailored maintenance plan.</p>
+      <a href="mailto:garrett@grimmdude.com?subject=Custom WordPress Maintenance Inquiry&body=Hi Garrett,%0D%0A%0D%0AI'm interested in discussing a custom WordPress maintenance solution. Here are my details and requirements:%0D%0A%0D%0AName:%0D%0AWebsite URL:%0D%0ASpecific needs:%0D%0A%0D%0AThank you!" class="btn btn-outline-primary mt-2">Contact Me</a>
     </div>
   </div>
 </div>
