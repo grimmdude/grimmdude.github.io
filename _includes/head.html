@@ -4,10 +4,12 @@
 
     <!-- Bootstrap & MDB -->
     <link rel="stylesheet" href="{{ '/assets/css/vendor/bootstrap.min.css' | relative_url }}">
+    {% comment %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
+    {% endcomment %}
 
     <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{ site.fontawesome.version }}/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/vendor/all.min.css' | relative_url }}">
     {% comment %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
     {% endcomment %}
@@ -26,7 +28,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+    {% comment %}
     <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.min.js"></script>
+    {% endcomment %}
 
     {%- if site.enable_darkmode %}
     <!-- Dark Mode -->
