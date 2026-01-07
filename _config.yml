@@ -178,7 +178,7 @@ minify: false
 # HTML compression using Liquid (compress layout)
 compress_html:
   clippings: all
-  comments: all
+  comments: false
   endings: all
   ignore:
     envs: [development]
