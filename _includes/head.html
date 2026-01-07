@@ -28,9 +28,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-    {% comment %}
-    <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.4/dist/turbo.es2017-umd.min.js"></script>
-    {% endcomment %}
+    <!-- Turbo -->
+    <script type="module" src="{{ '/assets/js/vendor/turbo.min.js' | relative_url }}"></script>
 
     {%- if site.enable_darkmode %}
     <!-- Dark Mode -->
