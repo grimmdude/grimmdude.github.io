@@ -36,21 +36,13 @@
               {% if site.blog_name %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}">blog
-                  {%- if page.title == "blog" -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">blog</a>
               </li>
               {%- endif %}
 
               <!-- Projects -->
               <li class="nav-item {% if page.name == 'projects.md' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/projects/' | relative_url }}">projects
-                  {%- if page.name == "projects.md" -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
+                <a class="nav-link" href="{{ '/projects/' | relative_url }}">projects</a>
               </li>
 
               <!-- Services -->
