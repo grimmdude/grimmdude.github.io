@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "postinstall": "npm run copy-assets",
-    "copy-assets": "mkdir -p assets/js/vendor assets/css/vendor assets/webfonts && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/vendor/ && cp node_modules/bootstrap/dist/css/bootstrap.min.css assets/css/vendor/ && cp node_modules/@popperjs/core/dist/umd/popper.min.js assets/js/vendor/ && cp node_modules/jquery/dist/jquery.min.js assets/js/vendor/ && cp node_modules/@fortawesome/fontawesome-free/css/all.min.css assets/css/vendor/ && cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* assets/webfonts/ && cp node_modules/masonry-layout/dist/masonry.pkgd.min.js assets/js/vendor/ && cp node_modules/imagesloaded/imagesloaded.pkgd.min.js assets/js/vendor/ && cp node_modules/medium-zoom/dist/medium-zoom.min.js assets/js/vendor/ && cp node_modules/mathjax/es5/tex-mml-chtml.js assets/js/vendor/"
+    "copy-assets": "mkdir -p assets/js/vendor assets/css/vendor && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/vendor/ && cp node_modules/bootstrap/dist/css/bootstrap.min.css assets/css/vendor/ && cp node_modules/@popperjs/core/dist/umd/popper.min.js assets/js/vendor/ && cp node_modules/jquery/dist/jquery.min.js assets/js/vendor/ && cp node_modules/lucide/dist/umd/lucide.min.js assets/js/vendor/ && cp node_modules/masonry-layout/dist/masonry.pkgd.min.js assets/js/vendor/ && cp node_modules/imagesloaded/imagesloaded.pkgd.min.js assets/js/vendor/ && cp node_modules/medium-zoom/dist/medium-zoom.min.js assets/js/vendor/ && cp node_modules/mathjax/es5/tex-mml-chtml.js assets/js/vendor/"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
     "@popperjs/core": "^2.11.8",
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "lucide": "^0.468.0",
     "jquery": "^3.7.1",
     "masonry-layout": "^4.2.2",
     "imagesloaded": "^5.0.0",
