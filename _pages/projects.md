@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: A collection of my projects.
 nav: true
-display_categories: [work, fun]
+display_categories: [fun, work]
 horizontal: false
 ---
 
@@ -13,7 +13,13 @@ horizontal: false
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
+  {%- if category == "fun" %}
+  <h2 class="category">Music</h2>
+  {%- elsif category == "work" %}
+  <h2 class="category">Development</h2>
+  {%- else %}
   <h2 class="category">{{ category }}</h2>
+  {%- endif %}
   {%- assign categorized_projects = site.projects | where: "category", category -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
