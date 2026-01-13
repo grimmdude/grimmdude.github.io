@@ -1,6 +1,17 @@
 <!-- Lucide Icons -->
 <script src="{{ '/assets/js/vendor/lucide.min.js' | relative_url }}"></script>
 <script>
-  // Initialize Lucide icons
-  lucide.createIcons();
+  // Initialize Lucide icons on page load
+  function initLucide() {
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  }
+
+  // Initial load
+  initLucide();
+
+  // Re-initialize on Turbo navigation
+  document.addEventListener('turbo:load', initLucide);
+  document.addEventListener('turbo:render', initLucide);
 </script>
