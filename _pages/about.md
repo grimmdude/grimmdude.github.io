@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hello!  My name's Garrett and I'm a web developer and a musician from San Francisco, California.
+Hello!  My name's Garrett and I'm a web developer and musician from San Francisco, California.
 
 I'm currently the lead software developer for <a href="https://appsumo.com/collections/appsumo-originals/" target="_blank">AppSumo Originals</a>, working on projects like <a href="https://tidycal.com" target="_blank">TidyCal</a>, <a href="https://sendfox.com">SendFox</a>, and others.  Here you'll find some information about my personal projects, interests, and other goings-on.
 
