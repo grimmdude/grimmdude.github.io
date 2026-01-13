@@ -365,24 +365,43 @@ footer.sticky-bottom {
   }
 }
 
-.pagination {
-  font-size: 0.875rem;
+// Blog pagination
+.post-pagination {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
 
-  .page-item {
-    .page-link {
-      color: var(--global-text-color);
-      padding: 0.375rem 0.75rem;
-      &:hover {
-        color: $black-color;
-      }
+  .pagination-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  .pagination-link {
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    i {
+      font-size: 0.75rem;
     }
-    &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
-      &:hover {
-        background-color: var(--global-theme-color);
-      }
+
+    &:hover:not(.disabled) {
+      color: var(--global-theme-color);
+      text-decoration: none;
     }
+
+    &.disabled {
+      color: var(--global-divider-color);
+      pointer-events: none;
+    }
+  }
+
+  .pagination-info {
+    color: var(--global-text-color);
+    opacity: 0.6;
+    font-size: 0.8rem;
   }
 }
 
