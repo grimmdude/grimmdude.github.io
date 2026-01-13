@@ -211,13 +211,44 @@ blockquote {
 
 // News
 
-.news table td {
-  font-size: 1rem;
-  color: var(--global-text-color);
-}
+.news .news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-.news table th {
-  color: var(--global-text-color);
+  .news-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .news-date {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
+  }
+
+  .news-content {
+    font-size: 1rem;
+    color: var(--global-text-color);
+  }
+
+  @media (max-width: 576px) {
+    .news-item {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .news-date {
+      width: auto;
+    }
+  }
 }
 
 // Social (bottom)
@@ -226,6 +257,9 @@ blockquote {
   text-align: center;
   .contact-icons {
     font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -252,6 +286,12 @@ footer.fixed-bottom {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-copy {
+    color: var(--global-footer-text-color);
   }
   a {
     color: var(--global-footer-link-color);
@@ -267,6 +307,19 @@ footer.sticky-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  a {
+    font-size: 1.25rem;
+  }
 }
 
 
