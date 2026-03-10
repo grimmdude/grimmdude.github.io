@@ -9,6 +9,18 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   font-weight: 300;
 }
 
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 3px solid var(--global-theme-color);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--global-text-color);
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }

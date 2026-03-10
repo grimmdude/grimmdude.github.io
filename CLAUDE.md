@@ -36,6 +36,9 @@ bundle exec jekyll build
 - `_pages/` - Static pages like about.md (permalink: /)
 - `_bibliography/` - BibTeX files for academic citations (managed by jekyll-scholar)
 
+**CSS Framework:**
+- Bootstrap 5.3.8 (`assets/css/vendor/bootstrap.min.css`) - base styling framework
+
 **Theme Components:**
 - `_layouts/` - Page templates (about, post, page, bib, distill, archive-*, default)
 - `_includes/` - Reusable components (figure, pagination, projects, news, social, metadata)
