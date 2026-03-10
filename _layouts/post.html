@@ -17,7 +17,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
     <p class="post-tags">
       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i data-lucide="calendar" style="width: 1em; height: 1em; display: inline-block;"></i> {{ year }} </a>
       {%- if tags != "" %}
@@ -38,6 +38,44 @@ layout: default
 
     </p>
   </header>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "jobTitle": "Principal Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AppSumo",
+          "url": "https://appsumo.com"
+        }
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        "url": "{{ site.url }}{{ site.baseurl }}"
+      },
+      "description": {{ page.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},
+      "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+      }
+      {%- if page.tags.size > 0 %},
+      "keywords": {{ page.tags | jsonify }}
+      {%- endif %}
+      {%- if page.categories.size > 0 %},
+      "articleSection": {{ page.categories | first | jsonify }}
+      {%- endif %}
+    }
+  </script>
 
   <article class="post-content">
     {{ content }}

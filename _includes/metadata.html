@@ -135,20 +135,46 @@
 
     <script type="application/ld+json">
       {
-        "author":
-        {
-          "@type": "Person",
-          "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "WebSite",
-        "description": "{%- if page.description -%}{{ page.description }}{%- else if site.description -%}{{ site.description }}{%- endif -%}",
-        "headline": "{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}",
-        {% if sameaslinks != blank -%}
-        "sameAs": {{ sameaslinks }}, 
-        {%- endif %}
+        "@context": "https://schema.org",
+        "@type": "Person",
         "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
-        "@context": "https://schema.org"
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "jobTitle": "Principal Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AppSumo",
+          "url": "https://appsumo.com"
+        },
+        "knowsAbout": ["Web Development", "Software Engineering", "PHP", "Laravel", "JavaScript", "Music"],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "AppSumo Originals",
+          "url": "https://appsumo.com/collections/appsumo-originals/",
+          "makesOffer": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "TidyCal",
+              "url": "https://tidycal.com",
+              "applicationCategory": "BusinessApplication"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "SendFox",
+              "url": "https://sendfox.com",
+              "applicationCategory": "BusinessApplication"
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "description": "{%- if site.description -%}{{ site.description }}{%- endif -%}"
+        {% if sameaslinks != blank -%}
+        ,"sameAs": {{ sameaslinks }}
+        {%- endif %}
       }
     </script>
 {%- endif %}
