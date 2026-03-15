@@ -58,7 +58,7 @@ layout: default
         }
       },
       "publisher": {
-        "@type": "Person",
+        "@type": "Organization",
         "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
         "url": "{{ site.url }}{{ site.baseurl }}"
       },
@@ -77,9 +77,11 @@ layout: default
     }
   </script>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <main>
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </main>
 
   {%- if site.disqus_shortname and page.comments -%}
     <div id="disqus_thread"></div>
